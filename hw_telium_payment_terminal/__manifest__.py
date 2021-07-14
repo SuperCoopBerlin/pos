@@ -7,9 +7,9 @@
     'summary': 'Adds support for Payment Terminals using Telium protocol',
     'author': "Akretion,Odoo Community Association (OCA)",
     'website': 'http://www.github.com/OCA/pos',
-    'depends': ['hw_proxy'],
+    'depends': ['hw_drivers'],
     'external_dependencies': {
-        'python': ['serial', 'pycountry'],
+        'python': ['serial', 'pycountry', 'simplejson'],
     },
     'data': [],
     'installable': False,
