@@ -8,7 +8,7 @@ from queue import Queue
 from odoo import http
 from odoo.tools.config import config
 
-from odoo.addons.hw_proxy.controllers import main as hw_proxy
+from odoo.addons.hw_drivers.controllers.proxy import proxy_drivers
 
 logger = logging.getLogger(__name__)
 
@@ -306,10 +306,10 @@ class TeliumPaymentTerminalDriver(Thread):
 
 driver = TeliumPaymentTerminalDriver()
 
-hw_proxy.drivers['telium_payment_terminal'] = driver
+proxy_drivers['telium_payment_terminal'] = driver
 
 
-class TeliumPaymentTerminalProxy(hw_proxy.Proxy):
+class TeliumPaymentTerminalController(http.Controller):
     @http.route(
         '/hw_proxy/payment_terminal_transaction_start',
         type='json', auth='none', cors='*')
