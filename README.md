@@ -13,6 +13,7 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[hw_drivers](hw_drivers) | see folder | Hardware drivers such as payment terminal drivers
 [pos_accented_search](pos_accented_search/) | 12.0.1.0.1 | Point of Sale - Product search works regardless of accented characters
 [pos_access_right](pos_access_right/) | 12.0.1.0.1 | Point of Sale - Extra Access Right for certain actions
 [pos_cash_control_multiple_config](pos_cash_control_multiple_config/) | 12.0.1.0.2 | Handle correctly opening balance in a multi point of sale context with Cash control enabled.
@@ -70,12 +71,6 @@ addon | version | summary
 [pos_user_restriction](pos_user_restriction/) | 12.0.1.0.2 | Restrict some users to see and use only certain points of sale
 [pos_warning_exiting](pos_warning_exiting/) | 12.0.1.0.1 | Add warning at exiting the PoS front office UI if there are pending draft orders
 
-
-Unported addons
----------------
-addon | version | summary
---- | --- | ---
-[hw_telium_payment_terminal](hw_telium_payment_terminal/) | 12.0.1.0.0 (unported) | Adds support for Payment Terminals using Telium protocol
 
 [//]: # (end addons)
 
