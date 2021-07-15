@@ -1,5 +1,5 @@
 import logging
-import simplejson
+import json
 import time
 import curses.ascii
 from threading import Thread, Lock
@@ -230,7 +230,7 @@ class TeliumPaymentTerminalDriver(Driver):
     def transaction_start(self, payment_info):
         '''This function sends the data to the serial/usb port.
         '''
-        payment_info_dict = simplejson.loads(payment_info)
+        payment_info_dict = json.loads(payment_info)
         assert isinstance(payment_info_dict, dict), \
             'payment_info_dict should be a dict'
         try:

@@ -9,7 +9,7 @@
     'website': 'http://www.github.com/OCA/pos',
     'depends': ['hw_drivers'],
     'external_dependencies': {
-        'python': ['serial', 'pycountry', 'simplejson'],
+        'python': ['serial', 'pycountry', 'json'],
     },
     'data': [],
     'installable': False,
