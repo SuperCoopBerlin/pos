@@ -4,9 +4,10 @@
 {
     'name': 'Point of Sale - Note Field',
     'summary': "Store Order Line Note field in Database",
-    'version': '12.0.1.0.2',
+    'version': '12.0.1.0.3',
     'category': 'Point of Sale',
     'author': 'GRAP,Odoo Community Association (OCA)',
+    'maintainers': ['legalsylvain'],
     'website': 'http://www.github.com/OCA/pos',
     'license': 'AGPL-3',
     'depends': [
